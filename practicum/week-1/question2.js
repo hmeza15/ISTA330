@@ -27,7 +27,7 @@ Example: input: cookies = [3, 5, 8] , extraCookies = 8
                       if (diff > extraCookies) {
                               return false;
                       }
-                      if (extraCookies != 0) {
+                      if (extraCookies < 0) {
                               return false;
                       }
                       cookies[index] += diff;
