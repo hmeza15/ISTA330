@@ -10,6 +10,27 @@ Example: input: cookies = [3, 5, 8] , extraCookies = 8
  */
 
  var canGetEqualCookies = function(cookies, extraCookies) {
-     
-    
+     //added all numbers in array then added with extra cookies = total amt cookies
+     //mod % to get remainder and if remainder=0 no extra cookies
+     //return false if remainder doesnt equal 0 then we can't have equal cookies for everyone
+        let max = 0;
+        let index = 0;
+        while (index < cookies.length) {
+                if (cookies[index] > max) {
+                        max = cookies[index];
+                }
+                index++;
+        } //end while loop; gets max
+        for (index = 0; index < cookies.length ; index++) {
+                if (cookies[index] < max) {
+                      let diff = max - cookies[index];
+                      if (diff > extraCookies) {
+                              return false;
+                      }
+                      cookies[index] += diff;
+                      extraCookies -= diff;
+                      
+                }
+        }
+        return true;
  };
