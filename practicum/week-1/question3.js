@@ -18,7 +18,7 @@ var numberOfOrderedPairs = function(input) {
     //3,5,2,8
     let numpairs = 0;
     for (let i = 0; i < input.length ; i++) {
-        for (let j = i++; j < input.length; j++) {
+        for (let j = i+1; j < input.length; j++) {
             if (input[i] < input[j]) {
                 numpairs = numpairs + 1;
             }
