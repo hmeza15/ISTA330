@@ -19,7 +19,7 @@ var minimalReduction = function(n) {
     //else (if none of above) subtract one from it
     //created variable outside of while loop var num=0 then in while loop num++ then return num++
     let num = 0;    
-    while (n >= 0) {
+    while (n > 0) {
         if (n % 4 == 0) {
             n = n / 4;
             num++;
@@ -35,5 +35,6 @@ var minimalReduction = function(n) {
     }
     return num;
 };
+var result = minimalReduction(12);
 
-console.log('hi');
+console.log(result);
