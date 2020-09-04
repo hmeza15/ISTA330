@@ -15,6 +15,7 @@ var numberOfOrderedPairs = function(input) {
     //in ordered pair 1st one has to be less than 2nd and same with indexes
     //return total number of ordered pairs
     //taking input array and making as many ordered pairs as it can following restrictions
+    //3,5,2,8
     let numpairs = 0;
     for (let i = 0; i < input.length ; i++) {
         for (let j = i++; j < input.length; j++) {
