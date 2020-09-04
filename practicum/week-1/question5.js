@@ -35,6 +35,5 @@ var minimalReduction = function(n) {
     }
     return num;
 };
-var result = minimalReduction(12);
-
-console.log(result);
+//var result = minimalReduction(12);
+//console.log(result);
