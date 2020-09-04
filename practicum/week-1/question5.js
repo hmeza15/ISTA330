@@ -12,7 +12,28 @@ output: 3
 */
 
 var minimalReduction = function(n) {
-
+    //if/else statements
+    //while loop while n (parameter) != 0
+    //divide by 4: make sure its divisible by 4 so do mod (1st if statement) 
+    //3 is same as for just with 3
+    //else (if none of above) subtract one from it
+    //created variable outside of while loop var num=0 then in while loop num++ then return num++
+    let num = 0;    
+    while (n >= 0) {
+        if (n % 4 == 0) {
+            n = n / 4;
+            num++;
+        }
+        else if (n % 3 == 0) {
+            n = n / 3;
+            num++;
+        }
+        else {
+            n = n - 1;
+            num++;
+        }
+    }
+    return num;
 };
 
 console.log('hi');
