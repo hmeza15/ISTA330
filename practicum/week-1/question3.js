@@ -9,5 +9,19 @@ There are 5 ordered pairs: (4, 6), (4, 9), (2, 6), (2, 9), (6, 9)
 */
 
 var numberOfOrderedPairs = function(input) {
-
+    //nested for loop
+    //for each index for starting at 4 then second for loop is going through the rest
+    //second loop for (i+1) ; first for loop set at 0 index
+    //in ordered pair 1st one has to be less than 2nd and same with indexes
+    //return total number of ordered pairs
+    //taking input array and making as many ordered pairs as it can following restrictions
+    let numpairs = 0;
+    for (let i = 0; i < input.length ; i++) {
+        for (let j = i++; j < input.length; j++) {
+            if (input[i] < input[j]) {
+                numpairs++;
+            }
+        }
+    }
+    return numpairs;
 };
