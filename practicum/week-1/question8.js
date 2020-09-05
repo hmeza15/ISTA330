@@ -9,10 +9,11 @@ output: [1, 0, 1, 2]
 
 var biggerAndEven = function(input) {
     let array = [];
+    let i = 0;
     for (let i = 0; i < input.length; i++) {
         let num = 0;
-        for (let j = i + 1; j < input.length; j++) {
-            if (input[j] % 2 == 0 && input[i] > input[j] ) {
+        for (let j = 0; j < input.length; j++) {
+            if (input[j] != input[i] && input[j] % 2 == 0 && input[j] > input[i] ) {
                 num += 1;
             }
         }
@@ -20,3 +21,5 @@ var biggerAndEven = function(input) {
     }
     return array;
 };
+//let result = biggerAndEven([23, 44, 12, 4]);
+//console.log(result)
