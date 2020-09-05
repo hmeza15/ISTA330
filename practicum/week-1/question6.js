@@ -25,5 +25,5 @@ var median = function(input) {
         return (input[index]);
     }
 };
-let result =  median([1 ,2, 2, 3, 4, 7, 9]);
- console.log(result)
+//let result =  median([1 ,2, 2, 3, 4, 7, 9]);
+ //console.log(result)
