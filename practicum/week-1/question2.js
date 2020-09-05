@@ -49,8 +49,8 @@ Example: input: cookies = [3, 5, 8] , extraCookies = 11
         }
         return true;
  };
-let result = canGetEqualCookies([3,5,2], 6);
-console.log(result)
+//let result = canGetEqualCookies([3,5,2], 6);
+//console.log(result)
  /*let hasequalnumbers = function(input){
         //for(let index = 0; (index + 1) < input.length; index++) {
                 //if (input[index] != input[index + 1]) {
