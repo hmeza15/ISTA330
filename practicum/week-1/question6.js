@@ -20,8 +20,10 @@ var median = function(input) {
         let s = input[index - 1];
         return ((s + f)/2);
     }
-    else {
-        index = input.length / 2;
-        return input[index];
+    if (input.length % 2 != 0) {
+        index = (input.length - 1) / 2;
+        return (input[index]);
     }
 };
+let result =  median([1 ,2, 2, 3, 4, 7, 9]);
+ console.log(result)
