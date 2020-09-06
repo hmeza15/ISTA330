@@ -35,5 +35,5 @@ var maxMinusMin = function(n) {
     }
     return (max - min);
 };
-let result = maxMinusMin(472);
-console.log(result);
+//let result = maxMinusMin(472);
+//console.log(result);
